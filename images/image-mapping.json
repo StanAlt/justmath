@@ -1,0 +1,68 @@
+{
+  "topics": {
+    "addition": {
+      "images": [
+        "apple.png",
+        "blocks.png",
+        "marbles.png",
+        "cookies.png"
+      ]
+    },
+    "subtraction": {
+      "images": [
+        "birds.png",
+        "balloons.png",
+        "stars.png",
+        "flowers.png"
+      ]
+    },
+    "multiplication": {
+      "images": [
+        "grid.png",
+        "groups.png",
+        "arrays.png",
+        "dots.png"
+      ]
+    },
+    "division": {
+      "images": [
+        "pie.png",
+        "sharing.png",
+        "groups.png",
+        "circles.png"
+      ]
+    },
+    "fractions": {
+      "images": [
+        "pizza.png",
+        "cake.png",
+        "chocolate.png",
+        "pie.png"
+      ]
+    },
+    "geometry": {
+      "images": [
+        "triangle.png",
+        "square.png",
+        "circle.png",
+        "shapes.png"
+      ]
+    },
+    "measurement": {
+      "images": [
+        "ruler.png",
+        "clock.png",
+        "scale.png",
+        "tape.png"
+      ]
+    },
+    "default": {
+      "images": [
+        "pencil.png",
+        "book.png",
+        "calculator.png",
+        "numbers.png"
+      ]
+    }
+  }
+}

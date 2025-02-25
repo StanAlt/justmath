@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section id="start-screen">
+            <h1>Welcome to JustMath.com</h1>
+            <form id="start-form">
+                <div class="form-group">
+                    <label for="age">Please enter your age (5-18):</label>
+                    <input type="number" id="age" min="5" max="100" required>
+                    <div id="age-error" class="error-message"></div>
+                </div>
+                <button type="submit" id="start-button">Start Assessment</button>
+            </form>
+        </section>
+
+        <section id="assessment" class="hidden">
+            <h2>Math Assessment</h2>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="question-container">
+                <div class="loading-screen">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-text">Loading Next Question...</p>
+                </div>
+                <div id="question-illustration" class="illustration"></div>
+                <div id="question-content">
+                    <div id="question-container">
+                        <!-- Question content will be inserted here -->
+                    </div>
+                    <div id="options-container">
+                        <!-- Options will be inserted here -->
+                    </div>
+                    <button id="submit-answer" class="submit-button" disabled>Submit Answer</button>
+                </div>
+            </div>
+            <div id="feedback" class="hidden">
+                <p id="answer-feedback"></p>
+                <div class="next-button-container">
+                    <button id="next-question" class="next-button">
+                        <span class="button-text">Next Question</span>
+                        <span class="countdown"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2>Assessment Complete!</h2>
+            <div class="results-container">
+                <p>You got <span id="correct-answers">0</span> out of <span id="total-questions">10</span> questions correct!</p>
+                <button id="restart-button">Try Again</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
